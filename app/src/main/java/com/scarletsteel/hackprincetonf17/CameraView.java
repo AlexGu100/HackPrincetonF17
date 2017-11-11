@@ -35,7 +35,7 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback{
         } catch (IOException e) {
             Log.d("ERROR", "Camera error on surfaceCreated " + e.getMessage());
         }
-    }
+    }//
 
     @Override
     public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i2, int i3) {
