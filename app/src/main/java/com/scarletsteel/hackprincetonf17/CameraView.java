@@ -29,6 +29,10 @@ public class CameraView extends SurfaceView implements SurfaceHolder.Callback{
     @Override
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
         try{
+            Camera.Parameters params = mCamera.getParameters();
+            params.setColorEffect(Camera.Parameters.EFFECT_NEGATIVE);
+            mCamera.setParameters(params);
+
             //when the surface is created, we can set the camera to draw images in this surfaceholder
             mCamera.setPreviewDisplay(surfaceHolder);
             mCamera.startPreview();

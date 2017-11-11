@@ -38,13 +38,13 @@ public class MainActivity extends AppCompatActivity {
             camera_view.addView(mCameraView);//add the SurfaceView to the layout
         }
 
-        //btn to close the application
+        /*//btn to close the application
         ImageButton imgClose = (ImageButton)findViewById(R.id.imgClose);
         imgClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 System.exit(0);
             }
-        });
+        });*/
     }
 }
