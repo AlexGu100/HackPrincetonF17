@@ -13,12 +13,10 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-        <FrameLayout
-            android:id="@+id/camera_view"
+        <TextureView
+            android:id="@+id/camera_textureview_preview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </FrameLayout>
+            android:layout_height="match_parent" />
 
         <ImageButton
             android:layout_width="wrap_content"
